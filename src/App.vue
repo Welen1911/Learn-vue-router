@@ -2,7 +2,8 @@
   <nav>
     <RouterLink to="/">Home</RouterLink> |
     <router-link to="/about">About</router-link> |
-    <RouterLink :to="rotaDinamica">Serviços</RouterLink>
+    <RouterLink :to="rotaDinamica">Serviços</RouterLink> |
+    <RouterLink to="/usuarios/10">Usuários</RouterLink>
   </nav>
   <RouterView/>
 </template>
@@ -13,6 +14,10 @@
       return {
         rotaDinamica: {
           name: 'servicos'
+        },
+        users: {
+          name: 'usuarios',
+          id: 1,
         }
       }
     }
